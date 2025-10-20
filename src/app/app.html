@@ -1,3 +1,9 @@
-<h1>NavBar</h1>
-<router-outlet />
-<footer>Footer</footer>
+<div class="d-flex flex-column min-vh-100">
+  <nav class="bg-light p-3">Navbar</nav>
+
+  <main class="flex-fill p-3">
+    <router-outlet></router-outlet>
+  </main>
+
+  <footer class="bg-dark text-white text-center p-3 mt-auto">Footer</footer>
+</div>

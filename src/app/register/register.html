@@ -16,6 +16,11 @@
 
     <form class="login-form" id="loginForm" novalidate>
       <div class="form-group">
+        <label for="name">Name</label>
+        <input type="text" id="name" name="name" />
+        <span class="error-message" id="nameError"></span>
+      </div>
+      <div class="form-group">
         <label for="email">Email</label>
         <input type="email" id="email" name="email" required autocomplete="email" />
         <span class="error-message" id="emailError"></span>
@@ -57,17 +62,8 @@
         <span class="error-message" id="passwordError"></span>
       </div>
 
-      <div class="form-options">
-        <label class="checkbox-wrapper">
-          <input type="checkbox" id="remember" name="remember" />
-          <span class="checkmark"></span>
-          Remember this device
-        </label>
-        <a href="#" class="forgot-link">Reset password</a>
-      </div>
-
       <button type="submit" class="login-btn">
-        <span class="btn-text">Sign In</span>
+        <span class="btn-text">Sign Up</span>
         <div class="btn-loader">
           <div class="spinner"></div>
         </div>
